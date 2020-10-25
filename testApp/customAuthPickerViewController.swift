@@ -6,11 +6,20 @@
 //
 
 import UIKit
+import FirebaseUI
 
-class CustomAuthPickerViewController: UIViewController {
+class CustomAuthPickerViewController: FUIAuthPickerViewController {
 
+    func authPickerViewController(for authUI: FUIAuth) -> FUIAuthPickerViewController {
+      return CustomAuthPickerViewController(authUI: authUI)
+    }
+    
+    let nc = FUIAuth.self
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor.black
 
         // Do any additional setup after loading the view.
     }
