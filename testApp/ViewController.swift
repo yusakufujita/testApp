@@ -27,7 +27,7 @@ class ViewController: UIViewController, FUIAuthDelegate {
 
     }
     
-    
+    ///
     @objc func authButtonTapped(sender : AnyObject) {
         
           // FirebaseUIのViewの取得
