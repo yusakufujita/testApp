@@ -5,17 +5,13 @@ import FirebaseUI
 class ViewController: UIViewController, FUIAuthDelegate {
     
     
-    @IBOutlet weak var authButton: UIButton!
-    
-    
     var authUI: FUIAuth {get { return FUIAuth.defaultAuthUI()!}}
     // 認証に使用するプロバイダの選択
     let providers: [FUIAuthProvider] = [
         FUIGoogleAuth(),
         FUIOAuth.appleAuthProvider(),
         FUIAnonymousAuth()
-        
-        //            FUIEmailAuth()
+        //FUIEmailAuth()
     ]
     
     override func viewDidLoad() {
@@ -23,12 +19,10 @@ class ViewController: UIViewController, FUIAuthDelegate {
         // authUIのデリゲート
         self.authUI.delegate = self
         self.authUI.providers = providers
-        authButton.addTarget(self,action: #selector(self.authButtonTapped(sender:)),for: .touchUpInside)
         
     }
     
-    ///
-    @objc func authButtonTapped(sender : AnyObject) {
+    func login() {
         
         // FirebaseUIのViewの取得
         let authViewController = self.authUI.authViewController()
