@@ -62,12 +62,30 @@
                                     <segue destination="6Ye-lM-xf2" kind="show" id="5Ao-vh-fqj"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Uc-GO-YGm">
+                                <rect key="frame" x="157" y="633" width="100" height="50"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="KTb-Qr-PkW"/>
+                                    <constraint firstAttribute="height" constant="50" id="Pkk-Me-B74"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Sign Out">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="signOut:" destination="cJA-Qy-FaK" eventType="touchUpInside" id="Gjv-sX-vhG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="npl-JL-gTi"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="O6C-WU-WmR" firstAttribute="centerX" secondItem="yiI-eh-3GV" secondAttribute="centerX" id="9tD-tX-F3Q"/>
                             <constraint firstItem="O6C-WU-WmR" firstAttribute="centerY" secondItem="yiI-eh-3GV" secondAttribute="centerY" id="KyK-Sa-VNd"/>
+                            <constraint firstItem="5Uc-GO-YGm" firstAttribute="top" secondItem="O6C-WU-WmR" secondAttribute="bottom" constant="200" id="SjJ-GO-XFA"/>
+                            <constraint firstItem="5Uc-GO-YGm" firstAttribute="centerX" secondItem="yiI-eh-3GV" secondAttribute="centerX" id="x1x-EZ-Bm3"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="h2D-gF-cpD"/>

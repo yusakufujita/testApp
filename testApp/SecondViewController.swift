@@ -7,8 +7,9 @@
 
 import UIKit
 import Firebase
+import FirebaseUI
 
-class SecondViewController: UIViewController {
+class SecondViewController: UIViewController, FUIAuthDelegate {
 
     @IBOutlet weak var messageLabel: UILabel!
     
@@ -16,4 +17,14 @@ class SecondViewController: UIViewController {
         messageLabel.text = "認証後の画面"
     }
     
+    @IBAction func signOut(_ sender: UIButton) {
+        let authUI = FUIAuth.defaultAuthUI()
+        do {
+            try authUI?.signOut()
+            dismiss(animated: true, completion: nil)
+            print("SignOut成功")
+        } catch {
+            print("SignOut失敗")
+        }
+    }
 }
