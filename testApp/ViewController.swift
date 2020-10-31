@@ -26,6 +26,8 @@ class ViewController: UIViewController, FUIAuthDelegate {
             Auth.auth().addStateDidChangeListener{auth, user in
                 if user != nil{
                     print("User is signed in.")
+                    let secondVc = self.storyboard!.instantiateViewController(withIdentifier: "Second") as! SecondViewController
+                    self.present(secondVc, animated: true, completion: nil)
                 } else {
                     print("User is signed out.")
                     self.login()
@@ -44,7 +46,9 @@ class ViewController: UIViewController, FUIAuthDelegate {
     public func authUI(_ authUI: FUIAuth, didSignInWith user: User?, error: Error?){
         // 認証に成功した場合
         if error == nil {
-            self.performSegue(withIdentifier: "toNextView", sender: nil)
+            //self.performSegue(withIdentifier: "toNextView", sender: nil)
+            let secondVc = self.storyboard!.instantiateViewController(withIdentifier: "Second") as! SecondViewController
+            self.present(secondVc, animated: true, completion: nil)
             print("認証に成功した")
         } else {
             //失敗した場合

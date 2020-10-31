@@ -43,7 +43,7 @@
         <!--Second View Controller-->
         <scene sceneID="pfb-gb-EHb">
             <objects>
-                <viewController storyboardIdentifier="CustomAuthPickerViewController" id="cJA-Qy-FaK" customClass="SecondViewController" customModule="testApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Second" id="cJA-Qy-FaK" customClass="SecondViewController" customModule="testApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yiI-eh-3GV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
