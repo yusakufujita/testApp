@@ -22,6 +22,7 @@
 		4A8B1566C44D955BA66111F4 /* Pods_testApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41546974E4FBF84D0549FA50 /* Pods_testApp.framework */; };
 		76861F1E80662596EB235CAD /* Pods_testApp_testAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7175B22D6CC72D3941FCA5B /* Pods_testApp_testAppUITests.framework */; };
 		8438DEA6633CCF7C3A5907B4 /* Pods_testAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 673B28224AA9E3A8651B03C8 /* Pods_testAppTests.framework */; };
+		F4E5F922254D9DB600953042 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E5F921254D9DB600953042 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		BACE1808CE294A2DB2B40267 /* Pods-testApp-testAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testApp-testAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-testApp-testAppUITests/Pods-testApp-testAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CBC81AC243EB161C1E8D3332 /* Pods-testApp-testAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testApp-testAppUITests.release.xcconfig"; path = "Target Support Files/Pods-testApp-testAppUITests/Pods-testApp-testAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D25E247FDF16229C3B2C5641 /* Pods-testAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testAppTests.debug.xcconfig"; path = "Target Support Files/Pods-testAppTests/Pods-testAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F4E5F921254D9DB600953042 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		F7175B22D6CC72D3941FCA5B /* Pods_testApp_testAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testApp_testAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -129,6 +131,7 @@
 				228BCE0F252A2A66004A952D /* AppDelegate.swift */,
 				228BCE11252A2A66004A952D /* SceneDelegate.swift */,
 				228BCE13252A2A66004A952D /* ViewController.swift */,
+				F4E5F921254D9DB600953042 /* SecondViewController.swift */,
 				228CBA582539959F00439331 /* CustomAuthPickerViewController.swift */,
 				228CBAFE25402BFB00439331 /* Firest.storyboard */,
 				228BCE15252A2A66004A952D /* Main.storyboard */,
@@ -462,6 +465,7 @@
 				228BCE14252A2A66004A952D /* ViewController.swift in Sources */,
 				228CBA5A2539959F00439331 /* CustomAuthPickerViewController.swift in Sources */,
 				228BCE10252A2A66004A952D /* AppDelegate.swift in Sources */,
+				F4E5F922254D9DB600953042 /* SecondViewController.swift in Sources */,
 				228BCE12252A2A66004A952D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
