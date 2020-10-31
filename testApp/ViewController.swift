@@ -41,9 +41,10 @@ class ViewController: UIViewController, FUIAuthDelegate {
         // 認証に成功した場合
         if error == nil {
             self.performSegue(withIdentifier: "toNextView", sender: nil)
+            print("認証に成功した")
         } else {
             //失敗した場合
-            print("error")
+            print("error:\(error)")
         }
     }
     
