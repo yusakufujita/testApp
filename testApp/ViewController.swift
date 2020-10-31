@@ -19,11 +19,21 @@ class ViewController: UIViewController, FUIAuthDelegate {
         // authUIのデリゲート
         self.authUI.delegate = self
         self.authUI.providers = providers
-        
+        checkLoggedIn()
     }
     
+    func checkLoggedIn() {
+            Auth.auth().addStateDidChangeListener{auth, user in
+                if user != nil{
+                    print("User is signed in.")
+                } else {
+                    print("User is signed out.")
+                    self.login()
+                }
+            }
+        }
+    
     func login() {
-        
         // FirebaseUIのViewの取得
         let authViewController = self.authUI.authViewController()
         // FirebaseUIのViewの表示
