@@ -48,8 +48,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="認証成功" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O6C-WU-WmR">
-                                <rect key="frame" x="166" y="409" width="82" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plain Text" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O6C-WU-WmR">
+                                <rect key="frame" x="0.0" y="371" width="414" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="mds-Zj-DP2"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -63,7 +66,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Uc-GO-YGm">
-                                <rect key="frame" x="157" y="633" width="100" height="50"/>
+                                <rect key="frame" x="157" y="671" width="100" height="50"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="KTb-Qr-PkW"/>
@@ -82,9 +85,11 @@
                         <viewLayoutGuide key="safeArea" id="npl-JL-gTi"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="O6C-WU-WmR" firstAttribute="leading" secondItem="npl-JL-gTi" secondAttribute="leading" id="4EO-1g-Zqs"/>
                             <constraint firstItem="O6C-WU-WmR" firstAttribute="centerX" secondItem="yiI-eh-3GV" secondAttribute="centerX" id="9tD-tX-F3Q"/>
                             <constraint firstItem="O6C-WU-WmR" firstAttribute="centerY" secondItem="yiI-eh-3GV" secondAttribute="centerY" id="KyK-Sa-VNd"/>
                             <constraint firstItem="5Uc-GO-YGm" firstAttribute="top" secondItem="O6C-WU-WmR" secondAttribute="bottom" constant="200" id="SjJ-GO-XFA"/>
+                            <constraint firstItem="npl-JL-gTi" firstAttribute="trailing" secondItem="O6C-WU-WmR" secondAttribute="trailing" id="hPU-gn-AEN"/>
                             <constraint firstItem="5Uc-GO-YGm" firstAttribute="centerX" secondItem="yiI-eh-3GV" secondAttribute="centerX" id="x1x-EZ-Bm3"/>
                         </constraints>
                     </view>
