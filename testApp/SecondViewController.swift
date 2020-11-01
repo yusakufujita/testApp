@@ -13,8 +13,12 @@ class SecondViewController: UIViewController, FUIAuthDelegate {
 
     @IBOutlet weak var messageLabel: UILabel!
     
+    let user = Auth.auth().currentUser!
+    
+    
     override func viewDidLoad() {
-        messageLabel.text = "認証後の画面"
+        
+        messageLabel.text = "認証後の画面\n\(user.isAnonymous)\n\(user.uid)"
     }
     
     @IBAction func signOut(_ sender: UIButton) {
